@@ -8,7 +8,7 @@ import psutil
 
 ## mqtt publisher
 client = mqtt.Client()
-client.connect("bibek.local", 1883, 60)
+client.connect("192.168.1.68", 1883, 60)
 
 
 sensor = DistanceSensor(

@@ -1,9 +1,11 @@
 from gpiozero import DistanceSensor
+from gpiozero.pins.lgpio import LGPIOFactory
 from time import sleep
 
 sensor = DistanceSensor(
     echo=4,
-    trigger=14
+    trigger=14,
+    pin_factory=LGPIOFactory()
 )
 
 while True:
